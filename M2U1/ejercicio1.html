@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cuadrados que cambian el color de fondo</title>
+	<style>
+		.square {
+			width: 100px;
+			height: 100px;
+			margin: 20px;
+			
+		}
+
+		#square1 {
+			background-color: red;
+		}
+
+		#square2 {
+			background-color: green;
+		}
+
+		#square3 {
+			background-color: blue;
+		}
+	</style>
+	<script>
+		function changeColor(color) {
+			document.body.style.backgroundColor = color;
+		}
+	</script>
+</head>
+<body>
+	<div id="square1" class="square" onclick="changeColor('red')"></div>
+	<div id="square2" class="square" onclick="changeColor('green')"></div>
+	<div id="square3" class="square" onclick="changeColor('blue')"></div>
+</body>
+</html>

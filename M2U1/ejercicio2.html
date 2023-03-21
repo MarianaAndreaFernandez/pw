@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contador de Caracteres</title>
+	<script>
+		function countChars(elementId, counterId, maxChars) {
+			var element = document.getElementById(elementId);
+			var counter = document.getElementById(counterId);
+			var remainingChars = maxChars - element.value.length;
+			counter.innerHTML = remainingChars + " caracteres restantes";
+		
+		}
+	</script>
+</head>
+<body>
+	<textarea id="myTextarea" onkeyup="countChars('myTextarea', 'charCounter', 300)"></textarea>
+	<div id="charCounter">300 caracteres restantes</div>
+</body>
+</html>
