@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <title>Cerveceria X</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <nav class="navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/novedades01.jpg" class="mx-auto d-block" alt="Icono" width="80" height="40">
+            </a>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Cerveceria X</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Precios</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Donde encontrarnos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Zona sur</a></li>
+                            <li><a class="dropdown-item" href="#">Zona oeste</a></li>
+                            <li><a class="dropdown-item" href="#">CABA</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br />
+    <div class="container-fluid">
+        <div id="home" class="row align-items-center hero">
+            <div class="col-lg-3 offset-lg-2">
+                <p>Bajada</p>
+                <h1>Titulo principal</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officia magnam corporis, error
+                    blanditiis maxime odio incidunt cum dolorem voluptate soluta! Ratione voluptas ut iste. Placeat
+                    explicabo modi sit ab.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row my-3">
+        <div id="Novedades" class="col-md-5 offset-md-2 py-3">
+            <h2>Novedades</h2>
+            <ul class="lista-novedades">
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="img/novedades01.jpg">
+                        Nuevas recetas 1</a></li>
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="img/novedades01.jpg">
+                        Nuevas recetas 2</a></li>
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="img/novedades01.jpg">
+                        Nuevas recetas 3</a></li>
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="img/novedades01.jpg">
+                        Nuevas recetas 4</a></li>
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="img/novedades01.jpg">
+                        Nuevas recetas 5</a></li>
+
+            </ul>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-5" id="exampleModalLabel">RECETA</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Ejemplo de receta
+                    </div>
+
+                </div>
+            </div>
+        </div> <!-- fin Modal -->
+        <div class="col-md-3 my-3">
+            <div class="rounded py-5 testimonios">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="testimonio">
+                                <h5>La mejor birra del mundo!</h5>
+                                <p>Mariana</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonio">
+                                <h5>No hay otra igual</h5>
+                                <p>Juan Ignacio</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonio">
+                                <h5>Tenés que probarla</h5>
+                                <p>Lola</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="text-center">Diseñado por: Mariana Fernandez 2023</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
